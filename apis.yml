@@ -1,25 +1,84 @@
 aid: voxy
+
 name: Voxy
-description: 'Voxy is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by bowery-capital) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://voxy.com/wp-content/uploads/2024/05/Voxy-Language-Training-for-Business-2.webp
+
+description: 'Voxy provides AI‑personalized corporate English training for global teams, offering live tutors 24/7, measurable ROI, and a platform that adapts to each learner’s needs. Founded to help businesses communicate confidently in English, Voxy combines language science with technology to deliver scalable, data‑driven language education for enterprises worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/voxy/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- LanguageLearning
+- AI
+- CorporateTraining
+- Education
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- bowery-capital
+
 common:
+- type: Hosts
+  url: hosts/voxy-hosts.yml
+- type: TermsOfService
+  url: https://voxy.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://voxy.com/privacy-policy
+- type: Login
+  url: https://app.voxy.com/go/login
+- type: Blog
+  url: https://voxy.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/voxy
+- type: DomainSecurity
+  url: security/voxy-domain-security.yml
 - type: Website
   url: https://voxy.com/
+  x-coverage:
+    state: unreadable
+    reason: js-rendered-docs
+    detail: The public website returns HTML with no machine‑readable API documentation.
+    evidence:
+      - url: https://voxy.com
+        status: 200
+    checked: '2026-10-24'
+
+apis: []
+
+x-backed-by:
+- bowery-capital
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://voxy.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,16 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/voxy/integrations
+- https://n8n.io/integrations/voxy/
+- https://composio.dev/toolkits/voxy
+- https://monid.ai/tools/voxy
+checked:
+- https://composio.dev/toolkits/voxy
+- https://monid.ai/tools/voxy
+- https://n8n.io/integrations/voxy/
+- https://zapier.com/apps/voxy/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
